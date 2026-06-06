@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-slate-700: #334155;
+  --color-slate-800: #1e293b;
+  --color-slate-850: #111a2e;
+  --color-slate-900: #0b111e;
+
+  --color-stone-50: #fafaf9;
+  --color-stone-100: #f5f5f4;
+  --color-stone-200: #e7e5e4;
+  --color-stone-300: #d6d3d1;
+  --color-stone-400: #a8a29e;
+  --color-stone-700: #44403c;
+  --color-stone-800: #292524;
+
+  --color-sage-400: #9cb097;
+  --color-sage-500: #7a8c75;
+  --color-sage-600: #5f6e5b;
+
+  --color-orange-100: #ffedd5;
+  --color-orange-200: #fed7aa;
+  --color-orange-400: #fb923c;
+  --color-orange-500: #f97316;
+
+  --font-sans: "Inter", "system-ui", "sans-serif";
+  --font-mono: "JetBrains Mono", "monospace";
+}
+
+/* Tells Tailwind to look for the .dark selector class on root elements */
+@variant dark (&:where(.dark, .dark *));
+
+:root {
+  background-color: #fafaf9;
+  color: #292524;
+}
+
+:root.dark {
+  background-color: #0b111e;
+  color: #f1f5f9;
+}
+
+@layer base {
+  body {
+    background-color: inherit;
+    color: inherit;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.style-scrollbar::-webkit-scrollbar {
+  height: 5px;
+}
+
+.style-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.style-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+.dark .style-scrollbar::-webkit-scrollbar-thumb {
+  background: #1e293b;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(3px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
