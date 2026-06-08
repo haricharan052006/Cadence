@@ -13,17 +13,12 @@ Completion Metrics: Real-time progress bar analysis for daily habit adherence, h
 Smart Data Actions: Built-in tools for seamless app sharing, progress reporting, and native Excel exportation for external performance analysis.
 
 Performance-First Architecture: Designed with localized data persistence for 100% offline functionality and instantaneous UI responsiveness.
-
 🛠 Tech Stack
-(Update these with your specific technologies, e.g., Flutter, Dart, React Native, etc.)
-
-Framework: [Insert Framework]
-
-Language: [Insert Language]
-
-Data Persistence: [e.g., Hive / SQLite / Room]
-
-Design Pattern: [e.g., MVVM / BLoC / Provider]
+* **Framework:** React (Vite)
+* **Language:** JavaScript
+* **Mobile Runtime:** Capacitor
+* **Persistence:** Capacitor Preferences / LocalStorage
+* **Build Tools:** Vite (Web), Gradle (Android)
 
 🏗 Key Components
 Global Settings Hub: A centralized node for theme toggling (Light/Dark mode), system cache management, and data portability.
