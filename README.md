@@ -13,7 +13,8 @@ Completion Metrics: Real-time progress bar analysis for daily habit adherence, h
 Smart Data Actions: Built-in tools for seamless app sharing, progress reporting, and native Excel exportation for external performance analysis.
 
 Performance-First Architecture: Designed with localized data persistence for 100% offline functionality and instantaneous UI responsiveness.
-🛠 Tech Stack
+
+## 🛠 Tech Stack
 * **Framework:** React (Vite)
 * **Language:** JavaScript
 * **Mobile Runtime:** Capacitor
